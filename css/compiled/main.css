@@ -9,13 +9,14 @@ html, body {
 		height: 100%;
 }
 
-h1, h2 {
+h1, h2, p {
 		font-family: "serif", "gilbert-color-bold-preview5";
-		font-weight: 100;
+		font-weight: 50;
 }
 
 section {
-		height: 45%;
+		min-height: 45%;
+		width: 100%;
 }
 
 .header {
@@ -50,4 +51,82 @@ section {
 
 .welcome .text h2 {
 		font-size: 600%;
+}
+
+.about {
+		display: flex;
+		text-align: center;
+		flex-direction: column;
+		color: #35a3f2;
+}
+
+.about h1 {
+		font-size: 800%;
+}
+
+.about p {
+		font-size: 200%;
+}
+
+.stat-header {
+		display: flex;
+		text-align: center;
+		vertical-align: middle;
+		background-image: url("../../img/Food.jpg");
+		ms-background-image: url("../../img/Food.jpg");
+		background-position: center;
+		background-attachment: fixed;
+}
+
+.stat-header .text {
+		width: 100%;
+		color: #58f235;
+}
+
+.stat-header .text h1 {
+		font-size: 1200%;
+}
+
+.stat-header .text h2 {
+		font-size: 600%;
+}
+
+.stats .circles {
+		display: flex;
+		justify-content: center;
+}
+
+.stats .circles .circle {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		width: 14vw;
+		height: 14vw;
+		margin: 3vw;
+		border-radius: 7.5vw;
+		border-color: #f24135;
+		border-width: 0.5vw;
+		border-style: solid;
+}
+
+.stats .circles .circle p {
+		font-size: 350%;
+		color: #f24135;
+}
+
+.stats .circles .circle .secondary {
+		color: #35a3f2;
+		text-decoration: underline;
+}
+
+.footer {
+		display: flex;
+		justify-content: center;
+}
+
+.footer a {
+		text-decoration: none;
+		color: #f24135;
+		font-size: 300%;
 }

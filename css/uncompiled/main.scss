@@ -1,6 +1,6 @@
 @import url('https://fonts.fontself.com/gE309jx/gilbert-color-bold-preview5.css');
 
-$font-header: 'serif', 'gilbert-color-bold-preview5';
+$font-primary: 'serif', 'gilbert-color-bold-preview5';
 
 $color-primary: #f24135;
 $color-secondary: #35a3f2;
@@ -16,13 +16,14 @@ html, body {
   height: 100%;
 }
 
-h1, h2 {
-  font-family: $font-header;
-  font-weight: 100;
+h1, h2, p {
+  font-family: $font-primary;
+  font-weight: 50;
 }
 
 section {
-  height: 45%;
+  min-height: 45%;
+  width: 100%;
 }
 
 .header {
@@ -52,5 +53,76 @@ section {
     h2 {
       font-size: 600%;
     }
+  }
+}
+
+.about {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  color: $color-secondary;
+  h1 {
+    font-size: 800%;
+  }
+  p {
+    font-size: 200%;
+  }
+}
+
+.stat-header {
+  display: flex;
+  text-align: center;
+  vertical-align: middle;
+  background-image: url("../../img/Food.jpg");
+  ms-background-image: url("../../img/Food.jpg"); // edge sucks
+  background-position: center;
+  background-attachment: fixed;
+  .text {
+    width: 100%;
+    color: $color-tertiary;
+    h1 {
+      font-size: 1200%;
+    }
+    h2 {
+      font-size: 600%;
+    }
+  }
+}
+
+.stats {
+  .circles {
+    display: flex;
+    justify-content: center;
+    .circle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: 14vw;
+      height: 14vw;
+      margin: 3vw;
+      border-radius: 7.5vw;
+      border-color: $color-primary;
+      border-width: 0.5vw;
+      border-style: solid;
+      p {
+        font-size: 350%;
+        color: $color-primary;
+      }
+      .secondary {
+        color: $color-secondary;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  a {
+    text-decoration: none;
+    color: $color-primary;
+    font-size: 300%;
   }
 }
