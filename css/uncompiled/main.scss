@@ -1,0 +1,26 @@
+@import url('https://fonts.fontself.com/gE309jx/gilbert-color-bold-preview5.css');
+
+$font-header: 'serif', 'gilbert-color-bold-preview5';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family: $font-header;
+  font-weight: 100;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  h1 {
+    font-size: 800%;
+  }
+}
