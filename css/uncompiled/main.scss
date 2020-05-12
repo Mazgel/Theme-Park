@@ -2,6 +2,10 @@
 
 $font-header: 'serif', 'gilbert-color-bold-preview5';
 
+$color-primary: #f24135;
+$color-secondary: #35a3f2;
+$color-tertiary: #58f235;
+
 * {
   margin: 0;
   padding: 0;
@@ -12,15 +16,41 @@ html, body {
   height: 100%;
 }
 
-h1 {
+h1, h2 {
   font-family: $font-header;
   font-weight: 100;
+}
+
+section {
+  height: 45%;
 }
 
 .header {
   display: flex;
   justify-content: center;
+  margin-bottom: 1%;
   h1 {
     font-size: 800%;
+    color: $color-primary;
+  }
+}
+
+.welcome {
+  display: flex;
+  text-align: center;
+  vertical-align: middle;
+  background-image: url("../../img/Entrance.jpg");
+  ms-background-image: url("../../img/Entrance.jpg"); // edge sucks
+  background-position: center;
+  background-attachment: fixed;
+  .text {
+    width: 100%;
+    color: $color-tertiary;
+    h1 {
+      font-size: 1200%;
+    }
+    h2 {
+      font-size: 600%;
+    }
   }
 }
